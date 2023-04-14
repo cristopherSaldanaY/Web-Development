@@ -4,5 +4,11 @@
 }
 
 header {
+    margin-top: 30px;
     text-align: center;
+}
+
+.main-courses{
+    padding-left: 40px;
+    padding-top: 40px;
 }
