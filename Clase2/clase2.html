@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Usando estilos embebidos -->
+    <style>
+        h5 {
+            background-color: gray;
+            color: white;
+            width: 200px;
+            margin-left: 10%;
+        }
+    </style>
+
+    <!-- Estilos CSS usando la style en las etiquetas -->
+    <h1 style="text-align: center;">Titulo de la pagina</h1>
+    <hr>
+    <ul style="font-size: 20px; margin-left: 10%;">
+        <li>Pagina principal</li>
+        <li>Productos</li>
+        <li>Servicios</li>
+    </ul>
+
+    <!-- Elementos en block por defecto, div representa una caja -->
+    <div style="background: red; width: 200px; height: 30px; margin-left: 10%; color: white;">Caja en block</div>
+    <div style="background: green; width: 200px; height: 30px; margin-left: 10%; color: white;">Caja en block</div>
+
+    <!-- elementos inline, span tiene esa propiedad -->
+    <p style="margin-left: 10%;">Cristopher <span>Saldaña Yeber</span></p>
+
+    <!-- usando el estilo embebido -->
+    <h5>Estilo embebido</h5>
+
+    <!-- usando archivo externo css, se usa la palabra class -->
+    <div>
+        <h2 class="archivoExterno">Este estilo es de un archivo externo</h2>
+    </div>
+
+    <!-- button por defecto es inline -->
+    <button class="btn-save">Guardar</button>
+    <button class="btn-close">Salir</button>
+
+
+    <h1 style="margin-top: 50px;">Selector por ID</h1>
+    <!-- referenciando con el id -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia harum aspernatur laudantium veritatis
+        est laboriosam nesciunt exercitationem soluta sint et, consequatur repudiandae deleniti quas ipsa aliquid
+        repellendus. Necessitatibus, reiciendis iusto?
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia harum aspernatur laudantium veritatis
+        est laboriosam nesciunt exercitationem soluta sint et, consequatur repudiandae deleniti quas ipsa aliquid
+        repellendus. Necessitatibus, reiciendis iusto?
+    </p>
+    <p id="refId">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia harum aspernatur laudantium veritatis
+        est laboriosam nesciunt exercitationem soluta sint et, consequatur repudiandae deleniti quas ipsa aliquid
+        repellendus. Necessitatibus, reiciendis iusto?
+    </p>
+
+    <h1>Selector por Clase</h1>
+    <h4 class="byClass">Cristopher Saldaña Yeber</h4>
+    <h4>Cristopher Saldaña Yeber</h4>
+    <h4>Cristopher Saldaña Yeber</h4>
+    <h4>Cristopher Saldaña Yeber</h4>
+    <h4>Cristopher Saldaña Yeber</h4>
+
+    <h1>Selector por Atributo</h1>
+    <h4 name="byAtributes">estilos por atributo</h4>
+    <h4 name="byAtributesTwo">estilos por atributo</h4>
+    <h4 name="byAtributesTree">estilos por atributo</h4>
+
+
+    <h1>Selector por Pseudo clases</h1>
+    <div class="pseudoFather">
+        <p class="pseudoSon">Software Developer</p>
+        <p class="pseudoSon">Software Developer</p>
+        <p class="pseudoSon">Software Developer</p>
+        <p class="pseudoSon">Software Developer</p>
+    </div>
+
+    <h1>Pseudo odd even</h1>
+    <div class="pseudoOddEvenFather">
+        <p class="pseudoOddEvenSon">Software Developer</p>
+        <p class="pseudoOddEvenSon">Software Developer</p>
+        <p class="pseudoOddEvenSon">Software Developer</p>
+        <p class="pseudoOddEvenSon">Software Developer</p>
+    </div>
+
+    <h1>Pseudo First,Last</h1>
+    <div class="pseudoFirstFather">
+        <p class="pseudoFirstSon">First</p>
+        <p class="pseudoFirstSon">Second</p>
+        <p class="pseudoFirstSon">Last</p>
+    </div>
+
+    <h1>Pseudo only child</h1>
+    <div class="pseudoOnlyFather">
+        <p class="pseudoOnlySon">Only Child</p>
+    </div>
+
+    <h1>Selector ></h1>
+    <div class="selectFather">
+        <p class="selectSon">BackEnd Developer</p>
+        <p class="selectSon">BackEnd Developer</p>
+        <p class="selectSon">BackEnd Developer</p>
+    </div>
+
+
+    <h1>Selector +</h1>
+    <div>
+        <h3 class="selectTitle">FrontEnd Developer</h3>
+        <p>React JS Developer</p>
+        <p>Angular JS Developer</p>
+    </div>
+
+
+    <h1>Selector ~ </h1>
+    <ul>
+        <li>HTML</li>
+        <li class="bold">CSS</li>
+        <li>JQUERY</li>
+        <li>BOOTSTRAP</li>
+        <li>MATERIAL UI</li>
+    </ul>
+</body>
+
+</html>

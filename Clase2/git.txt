@@ -1,0 +1,37 @@
+Git
+
+** crear subdirectorio .git ***
+git init
+
+*** descarga los cambios realizados ***
+git fetch
+
+*** mezcla la rama en la que estas, con los cambios realizados en una rama ***
+git merge nombre_rama
+
+*** unifica los comandos fetch y merge ***
+git pull
+
+*** Confirma los cambios y agrega descripcion ***
+git commit -m "mensaje"
+
+*** sube la rama nombre_rama al servidor ***
+git push origin "nombre_rama"
+
+*** muestra el estado actual de la rama. como cambios sin commit ***
+git status
+
+*** agregas el archivo "nombre_archivo" para hacerle seguimiento ***
+git add "nombre_archivo"
+
+*** crea una rama a partir de la que estas posicionado y te deja en la nueva rama ***
+git checkout -b "nombre_rama_nueva"
+
+*** Lista todas las ramas locales ***
+git branch
+
+*** lista todas las ramas locales y remotas ***
+git branch -a
+
+*** commitea los cambios desde el branch local origin al branch "nombre_rama" ***
+git push origin "nombre_rama"

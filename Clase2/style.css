@@ -1,0 +1,104 @@
+/* 
+Especifidad
+
+!important          = 1,0,0,0,0
+#id                 = 0,1,0,0,0
+Estilos en linea    = 0,0,1,0,0
+.class o pseudo     = 0,0,0,1,0
+<Elementos />       = 0,0,0,0,1
+*Selector universal = 0,0,0,0,0
+
+
+
+*/
+
+/* Estilos universales */
+*{
+    background-color: rgb(235, 250, 250);
+}
+
+
+
+.archivoExterno {
+    background-color: blue;
+    color: white;
+    border-radius: 4px;
+}
+
+.btn-save{
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-close{
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#refId {
+    background-color: blue;
+    margin-left: 10%;
+    color: white;
+}
+
+.byClass{
+    background-color: aqua;
+}
+
+h4[name]{
+    background-color: aquamarine;
+}
+
+h4[name="byAtributesTwo"]{
+    background-color: brown;
+}
+
+.pseudoSon:nth-child(2){
+    background-color: blueviolet;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+}
+
+
+.pseudoOddEvenSon:nth-child(odd){
+    background-color: black;
+    color: white;
+    
+}
+
+.pseudoOddEvenSon:nth-child(even){
+    background-color: wheat;
+    color: black;
+    text-align: end;
+}
+
+.pseudoFirstSon:first-child{
+    background-color: blueviolet;
+}
+
+.pseudoFirstSon:last-child{
+    background-color: blue;
+}
+
+.pseudoOnlySon:only-child{
+    background-color: aqua;
+}
+
+.selectFather > p {
+    background-color: yellow;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.selectTitle + p{
+    background-color: blueviolet;
+}
+
+.bold ~ li{
+    font-weight: bold;
+}
