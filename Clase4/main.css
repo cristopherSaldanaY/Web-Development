@@ -1,0 +1,288 @@
+/* Basic styling */ 
+* { 
+    box-sizing: border-box; padding: 0; margin: 0; 
+} 
+
+body { 
+    font-family: sans-serif; 
+}
+
+nav {
+    background: #222; padding: 5px 20px;
+} 
+ul { 
+    list-style-type: none; 
+}
+
+a { 
+    color: white; text-decoration: none; 
+} 
+
+a:hover { 
+    text-decoration: underline;
+} 
+
+.logo a:hover { 
+    text-decoration: none;
+} 
+
+.menu li {
+    font-size: 16px; padding: 15px 5px; white-space: nowrap;
+} 
+
+.logo a, .toggle a {
+    font-size: 20px; 
+
+} .button.secondary {
+    border-bottom: 1px #444 solid; 
+}
+
+
+/* Mobile menu */ 
+
+.menu {
+    display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; 
+} 
+
+.toggle {
+    order: 1; 
+}
+
+.item.button {
+    order: 2; 
+}
+
+.item {
+    width: 100%; text-align: center; order: 3; display: none;
+} 
+
+.item.active {
+    display: block;
+}
+
+
+/* Tablet menu */ 
+
+@media all and (min-width: 600px) { 
+    .menu { justify-content: center; } 
+    .logo { flex: 1; } 
+    .toggle { flex: 1; text-align: right; } 
+    .item.button { width: auto; order: 1; display: block; } 
+    .toggle { order: 2; } .button.secondary { border: 0; } 
+    .button a { padding: 7.5px 15px; background: teal; border: 1px #006d6d solid; } 
+    .button.secondary a { background: transparent; } 
+    .button a:hover { text-decoration: none; } 
+    .button:not(.secondary) a:hover { background: #006d6d; border-color: #005959; } 
+    .button.secondary a:hover { color: #ddd; }
+}
+
+/* Desktop menu */ 
+@media all and (min-width: 900px) {
+    .item { display: block; width: auto; } 
+    .toggle { display: none; } .logo { order: 0; } 
+    .item { order: 1; } .button { order: 2; } 
+    .menu li { padding: 15px 10px; } 
+    .menu li.button { padding-right: 0; }
+}
+
+
+.logo-html{
+    width: 40px;
+    height: 40px;
+    background-image: url("./assets/icons/html.png");
+    background-size: contain;
+    cursor: pointer;
+}
+
+.logo-css{
+    width: 40px;
+    height: 40px;
+    background-image: url("./assets/icons/css-3.png");
+    background-size: contain;
+    cursor: pointer;
+    
+}
+
+.logo-javascript{
+    width: 40px;
+    height: 40px;
+    background-image: url("./assets/icons/javascript.png");
+    background-size: contain;
+    cursor: pointer;
+}
+
+.button a{
+    border-radius: 6px;
+}
+
+
+.header-title{
+    width: 36%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* codigo de clase 4 */
+.box1{
+    width: 100%; /* 100% ancho */
+    height: 100vh; /* todo el espacio de la pantalla view por height */
+    margin-top: 20px;
+    background-color: rgba(0, 128, 128, 1);
+    position: relative; /* para usar absolute dejamos el padre relative */
+}
+
+.relative{
+    width: 100px;
+    height: 100px;
+    background-color: #444;
+    border: 2px solid black;
+    border-radius: 50%; /* hace un circulo */
+    position: relative; /* asi se desbloquean las propiedades */
+    left: 10px;
+    top: -45px
+}
+
+.relative p{
+    text-align: center;
+    padding-top:37px;
+    color: white;
+}
+
+.absolute {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+    border: 2px solid gray;
+    position: absolute; /* se posiciona segun el padre */
+    right: 10px; /* se va a la derecha */
+    top: -45px; /* lo tira hacia arriba, hago que pase  */
+}
+
+.absolute p {
+    text-align: center;
+    padding-top: 37px;
+    color: black;
+}
+
+.fixed {
+    width: 50px;
+    height: 50px;
+    background-image: url("./assets/icons/whatsapp.png");
+    background-size: contain;
+    position:fixed; /* mantiene su posicion ante el scroll */
+    left: 10%;
+    bottom: 100px;
+}
+
+.fixed p{
+    width: 100px;
+    position: relative;
+    left: 55px;
+    top: 15px;
+    color: #ddd;
+
+}
+
+.container-transition h2{
+    text-align: center;
+}
+
+.transition {
+    width: 500px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: rgba(50, 20, 73, 30%);
+    border-radius: 50%;
+    transition-property: background-color, width; /* selecciona la propiedad que va anirmar */
+    transition-duration: .5s;
+    transition-delay: .10;   /* tiempo demora en transicion, 1ms es milisegundo o con .1 */
+    /* transition-timing-function: ease-out; */ /* rapidez que quiero que inicie y con la que termine, linear, ease, ease-in ease-out */
+
+}
+
+.transition:hover{ /* al pasar el mouse por encima */
+    background-color: rgba(126, 163, 14, 0.3);
+    width: 600px;
+}
+
+.btn-transition{
+    width: 100px;
+    height: 30px;
+    position: relative;
+    left: 40%;
+    top: 32%;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 1px solid;
+    background-color: #198754;
+    transition: all 1s; /* todas las propiedades */
+}
+
+.btn-transition:hover{
+    background-color: red;
+    color: white;
+    box-shadow: 0 0 30px rgba(36, 34, 161, 904);
+}
+
+.container-animation h2{
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.animation{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+}
+
+.animation ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.animation ul li{
+    width: 100%;
+    margin-top: 10px;
+    animation-duration: 2s;
+    animation-name: slidein;
+
+}
+
+@keyframes slidein {
+    from{
+     margin-left: 100%;
+     width: 300%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+
+.animation2{
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 100px;
+    height: 100px;
+    background-color: palevioletred;
+    border-radius: 50%;
+    animation: move 5s infinite ease;
+}
+
+@keyframes move {
+    from{
+        background-color: rgb(37, 7, 206);
+        transform: translateX(0px);
+    } to{
+        background-color: rgb(117, 8, 108);
+        transform: translateX(600px);
+
+    }
+}
+

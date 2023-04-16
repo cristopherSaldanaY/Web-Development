@@ -1,0 +1,306 @@
+/* Basic styling */ 
+* { 
+    box-sizing: border-box; padding: 0; margin: 0; 
+}
+
+body{
+    background: rgb(29, 30, 70);
+}
+
+h1{
+    color: yellow;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    color: white;
+    margin-top: 40px;
+    font-size:25px;
+    margin-left: 10px;
+}
+nav{
+    background-color: rgba(12, 13, 30, 1);
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+.nav-item-right {
+    width: 100%;
+}
+.nav-item-right ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.item-rrss li{
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+
+.container-flexBox{
+    width: 100%;
+    height: 100vh; /* ocupa todo el espacio de la ventana */
+    background: rgb(29, 30, 70);
+}
+
+
+
+.container-flexRow{
+    width: 100%;
+    border: 2px solid white;
+    height: 150px;
+    display: flex; /* agregamos flex al padre */
+    justify-content: center;  /* el item hijo se centrara al centro boxFlex horizonal*/
+    /* align-items: center; */ /* el item hijo se centrara al centro boxFlex vertical */
+    /* flex-direction: row-reverse; */ /* invierte las posiciones en row */
+   /*  flex-direction: column; */ /* los posiciona en columna */
+    /* flex-direction: column-reverse; */ /* los invierte en columna */
+}
+
+.container-flexRow h2{
+    margin-top: 40px;
+    margin-left: 10px;    
+}
+
+.boxFlex{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background: green;
+    color: white;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.boxFlex2{
+    width: 100px;
+    height: 150px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background: rgb(110, 20, 188);
+    color: white;
+    border: 2px solid black;
+    text-align: center;
+}
+.boxFlex3{
+    width: 200px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background: rgb(110, 20, 188);
+    color: white;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.boxFlex4{
+    width: 50px;
+    height: 50px;
+    background: rgb(110, 20, 188);
+    color: white;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.container-flexRowReverse{
+    width: 100%;
+    border: 2px solid white;
+    height: 150px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.container-flexRowReverse h2{
+    margin-top: 40px;
+}
+
+.row{
+    width: 100%;
+    border: 2px solid white;
+
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container-flexColumn{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-flexColumn h2{
+    margin-left: 10px;
+}
+
+.container-flexColumnReverse{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+
+.flex-wrap{
+    border: 2px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.container-flexBox h2{
+    margin-left: 14px;
+    margin-top: 10px;
+}
+
+.flex-start{
+    border: 2px solid white;
+    height: 120px;
+    display: flex;
+    justify-content: start;
+}
+
+.flex-end{
+    border: 2px solid white;
+    height: 120px;
+    display: flex;
+    justify-content: end;
+}
+
+.center{
+    border: 2px solid white;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+}
+.space-between{
+    border: 2px solid white;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.space-around{
+    border: 2px solid white;
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.space-evenly{
+    border: 2px solid white;
+    height: 120px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.alignFlexStart{
+    display: flex;
+    align-items: flex-start;
+    height: 250px;
+    border: 2px solid white;
+}
+
+.alignFlexEnd{
+    display: flex;
+    align-items: flex-end;
+    height: 250px;
+    border: 2px solid white;
+}
+
+.alignCenter{
+    display: flex;
+    align-items: center;
+    height: 250px;
+    border: 2px solid white;
+}
+
+.alignStretch{
+    height: 250px;
+    display: flex;
+    align-items:stretch;
+    border: 2px solid white;
+}
+
+.alignBaseline{
+    height: 250px;
+    display: flex;
+    align-items: baseline;
+    border: 2px solid white;
+}
+
+/* ALIGN-CONTENT */
+/* debe llevar wrap para que el align content funcione */
+
+.contentFlexStart{
+    height: 250px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.contentFlexEnd{
+    height: 250px;
+    border: 2px solid white;
+    display: flex;
+    flex-wrap: wrap; 
+    align-content: flex-end;
+
+}
+
+.contentFlexCenter{
+    height: 250px;
+    border: 2px solid white;
+    display: flex;
+    flex-wrap: wrap; 
+    align-content: center;
+}
+
+.contentFlexStretch{
+    height: 250px;
+    border: 2px solid white;
+    display: flex;
+    flex-wrap: wrap; 
+    align-content: stretch;
+}
+
+.contentFlexSpaceBetween{
+    display: flex;
+    height: 250px;
+    flex-wrap: wrap; 
+    align-content: space-between;
+}
+
+.contentFlexSpaceAround{
+    display: flex;
+    height: 250px;
+    flex-wrap: wrap; 
+    align-content: space-around;
+}
+
+.container {
+    width: 100%;
+    height: 400px;
+    border: 2px solid white;
+}
+
+.alignSelfFlexStartEnd{
+    display: flex;
+    height: 150px;
+    align-self: flex-start;
+}
+
+.flex-end{
+
+    align-self: flex-end;
+}

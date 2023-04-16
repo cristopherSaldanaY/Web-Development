@@ -1,0 +1,349 @@
+*{
+    box-sizing: border-box; 
+    padding: 0; 
+    margin: 0; 
+}
+
+body{
+    background: #eef1fc;
+}
+
+header{
+    text-align: center;
+    height: 100px;
+    min-width: 300px;
+    margin-top: 20px;
+    
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: white
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border: 2px solid yellow;
+    display: flex;
+    align-items: center;
+    
+}
+
+.boxBaseline{
+    width: 100px;
+    height: 200px;
+    background-color: blue;
+    border: 2px solid yellow;
+}
+
+.self{
+    align-self: flex-end;
+}
+
+p{
+    width: 100%;
+    color: rgb(232, 231, 240);
+    text-align: center;
+    font-size: 40px;
+}
+
+.flexbox{
+    height: 400px;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;  /* lo alinea al centro en horizonal */
+    
+
+    gap: 100px; /* crea un espacio de 100px entre items */
+}
+
+#order{
+    order: 1; /* sirve para indicar que posicion debe tomar, todos los elementos deben tener un id y orden para que funcione */
+}
+/* display: permite definir el flex */
+/* flex-direction: maneja el eje principal */
+/* flex-wrap: maneja el salto de linea al llenar un contenedor */
+/* justify-content: alineamiento en el eje principal */
+/* align-items: alineamiento en el eje transversal */
+/* align-content: si es un flex multilinea, ajusta las lineas cuando hay espacio extrae en el eje transversal */
+/* gap: controla el espacio entre items flex */
+
+/* Flexbox justify-content  - es el main-axis de izquierda a derecha <----->*/
+/* Flexbox align-items - es el cross axis la oriendacion  de arriba hacia abajo*/
+
+
+/* FlexBox flex-direction */
+.flexbox2{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row; /* los apila de forma horizontal */
+}
+
+.flexbox2{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row-reverse; /* los apila de forma horizonal invertido */
+}
+
+.flexbox2{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column; /* los apila un encima de otro en columna */
+}
+
+.flexbox2{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column-reverse; /* los apila encima de otro en columna invertida */
+}
+
+/*  */
+/*  */
+/* Flexbox justify-content  - es el main-axis de izquierda a derecha <----->*/
+
+.flexbox2{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start; /* los ajusta al comienzo */
+}
+
+.flexbox2{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end; /* los ajusta al final de la fila */
+}
+
+.flexbox2{
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* los ajusta al centro de la fila */
+}
+
+.flexbox2{
+    list-style-type: none;
+    display: flex;
+    justify-content:space-between; /* crea un espacio entre los elementos, despues del primer elemento */
+}
+
+.flexbox2{
+    list-style-type: none;
+    display: flex;
+    justify-content:space-around; /* crear un espacio entre los elementos, comienza antes del primer elemento */
+}
+
+.flexbox2{
+    list-style-type: none;
+    display: flex;
+    justify-content:space-evenly; /* los elementos se repartiran en el espacio sobrante de su contenedor de igual manera   */
+}
+
+/*  */
+/*  */
+/* flex Wrap - ajusta los items para la multilinea, cuando sobrepasa el tamaño los acomoda abajo */
+
+.flexbox2{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* hace la multilinea */
+}
+
+.flexbox2{
+    height: 400px; /* especifico el tamaño de la caja padre para evitar que desborde */
+    list-style-type: none;
+    display: flex;
+    flex-direction: column; /* tambien lo hace en colum */
+    flex-wrap: wrap;
+}
+
+.flexbox2{
+    height: 400px;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap; /* se pueden justar flex-direction y flex-wrap en una sola linea con flex-flow */
+}
+
+/*  */
+/*  */
+/* Alineacion */
+
+
+.flexbox2{
+    height: 400px;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; /* lo alinea al centro en horizonal */
+    align-items: flex-start; /* lo alinea al al inicio en vertical */
+}
+
+.flexbox2{
+    height: 400px;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; /* lo alinea al centro en horizonal */
+    align-items: flex-end; /* lo alinea al al final en vertical */
+}
+
+.flexbox2{
+    height: 400px;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; /* lo alinea al centro en horizonal */
+    align-items: center; /* lo alinea al centro en vertical */
+}
+
+/* stretch es especial, no debe tener heigh que es la altura, stretch tomara todo el espacio */
+.box2{
+    width: 100px;
+    /* height: 100px; */
+    background-color: green;
+    border: 2px solid yellow;
+    
+}
+.flexbox2{
+    height: 400px;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; /* lo alinea al centro en horizonal */
+    align-items: stretch; /* funciona solo si el flex-item no tiene ni ancho ni alto, esto usara todo el espacio vertical */
+}
+
+/* baseline lo que hace es ajustarlos segun el texto que tenga, en el ejemplo creamos otro tipo de caja */
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border: 2px solid yellow;
+    
+}
+
+.boxBaseline{
+    width: 100px;
+    height: 200px;
+    background-color: blue;
+    border: 2px solid yellow;
+}
+
+
+.flexbox{
+    height: 400px;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; /* lo alinea al centro en horizonal */
+    align-items: baseline; /* lo alinea segun el texto */
+}
+
+
+
+/*  */
+/*  */
+/* Align-self: el elemento elegido puede cambiar de orientacion */
+
+.self2{
+    align-self: flex-end;
+}
+
+.flexbox2{
+    height: 400px;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; /* lo alinea al centro en horizonal */
+    align-items: center; /* */
+}
+
+
+
+/*  */
+/*  */
+/* GAP: espacio entre los elementos hijos */
+.flexbox2{
+    height: 400px;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; /* lo alinea al centro en horizonal */
+    align-items: center; /* */
+    gap: 100px; /* crea un espacio de 100px entre items */
+}
+
+
+
+/*  */
+/*  */
+/* Para centrar el texto de la caja hice display flex la caja y align-items center para vertical y al texto text-alig para que centre horizontal   */
+
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border: 2px solid yellow;
+    display: flex;
+    align-items: center;
+}
+
+.p2{
+    width: 100%;
+    color: rgb(232, 231, 240);
+    text-align: center;
+    font-size: 40px;
+}
+
+
+/* order */
+#order2{
+    order: 1; /* sirve para indicar que posicion debe tomar, todos los elementos deben tener un id y orden para que funcione */
+}
+
+
+
+/*  */
+/*  */
+/* align-content: la alineacion vertical */
+
+.flexbox2{
+    height: 400px;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;  
+    align-content: start; /* alinea al inicio en vertical */
+}
+
+
+.flexbox2{
+    height: 400px;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;  
+    align-content: flex-end; /* alinea al final en la vertical */
+}
+
+.flexbox2{
+    height: 400px;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;  
+    align-content: center; /* alinea al centro de forma vertical */
+    
+}
+
+.flexbox{
+    height: 400px;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;  /* lo alinea al centro en horizonal */
+    align-content: space-between; /* los separa en los extremos con espacio entremedio pero en vertical */
+}

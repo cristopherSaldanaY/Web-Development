@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Clase 5</title>
+</head>
+
+<body>
+    <nav>
+        <div class="main-nav">
+            <div class="nav-item-right">
+                <ul class="item-rrss">
+                    <li><img src="../Clase4/assets/icons/html.png" alt=""></li>
+                    <li><img src="../Clase4/assets/icons/css-3.png" alt=""></li>
+                    <li><img src="../Clase4/assets/icons/javascript.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container-flexBox">
+        <!-- display Flex: row -->
+       
+        <div class="container-flexRow">
+            <p>Flex - row </p>
+            <div class="boxFlex">1</div>
+            <div class="boxFlex">2</div>
+            <div class="boxFlex">3</div>
+            <div class="boxFlex">4</div>
+            <div class="boxFlex">5</div>
+            <div class="boxFlex">6</div>
+        </div>
+
+        <!-- display flex: column -->
+        <div class="container-flexRowReverse">
+            <div class="boxFlex">1</div>
+            <div class="boxFlex">2</div>
+            <div class="boxFlex">3</div>
+            <div class="boxFlex">4</div>
+            <div class="boxFlex">5</div>
+            <div class="boxFlex">6</div>
+            <p>Flex - Row-Reverse</p>
+        </div>
+
+        <div class="row">
+
+            <div class="container-flexColumn">
+                <p>Flex - Column</p>
+                <div class="boxFlex">1</div>
+                <div class="boxFlex">2</div>
+            </div> 
+
+            <div class="container-flexColumnReverse">
+                <div class="boxFlex">1</div>
+                <div class="boxFlex">2</div>
+                <p>Flex - Column-Reverse</p>
+            </div>
+        </div>
+        
+        <!-- Wrap los ajusta a su tamaño, si sobrepasa los posiciona abajo -->
+        <p>Flex Wrap</p> 
+        <div class="flex-wrap">
+            <div class="boxFlex">1</div>
+            <div class="boxFlex">2</div>
+            <div class="boxFlex">3</div>
+            <div class="boxFlex">4</div>
+            <div class="boxFlex">5</div>
+            <div class="boxFlex">6</div>
+            <div class="boxFlex">7</div>
+            <div class="boxFlex">8</div>
+            <div class="boxFlex">9</div>
+            <div class="boxFlex">10</div>
+            <div class="boxFlex">11</div>
+            <div class="boxFlex">12</div>
+            <div class="boxFlex">13</div>
+            <div class="boxFlex">14</div>
+            <div class="boxFlex">15</div>
+            <div class="boxFlex">16</div>
+            <div class="boxFlex">17</div>
+            <div class="boxFlex">18</div>
+            <div class="boxFlex">19</div>
+            <div class="boxFlex">20</div>
+        </div>
+
+        <h1>Justify-content</h1>
+        <div class="flex-start">
+            <p>flex-start</p>
+            <div class="boxFlex">1</div>
+            <div class="boxFlex">2</div>
+            <div class="boxFlex">3</div>
+            <div class="boxFlex">4</div>
+            <div class="boxFlex">5</div>
+        </div>
+        <div class="flex-end">
+            <p>flex-end</p>
+            <div class="boxFlex">1</div>
+            <div class="boxFlex">2</div>
+            <div class="boxFlex">3</div>
+            <div class="boxFlex">4</div>
+            <div class="boxFlex">5</div>
+        </div>
+        <div class="center">
+            <p>Center</p>
+            <div class="boxFlex">1</div>
+            <div class="boxFlex">2</div>
+            <div class="boxFlex">3</div>
+            <div class="boxFlex">4</div>
+            <div class="boxFlex">5</div>
+        </div>
+        <div class="space-between">
+            <p>Space-between</p>
+            <div class="boxFlex">1</div>
+            <div class="boxFlex">2</div>
+            <div class="boxFlex">3</div>
+            <div class="boxFlex">4</div>
+            <div class="boxFlex">5</div>
+        </div>
+        <div class="space-around">
+            <p>Space-around</p>
+            <div class="boxFlex">1</div>
+            <div class="boxFlex">2</div>
+            <div class="boxFlex">3</div>
+            <div class="boxFlex">4</div>
+            <div class="boxFlex">5</div>
+        </div>
+        <div class="space-evenly">
+            <p>Space-evenly</p>
+            <div class="boxFlex">1</div>
+            <div class="boxFlex">2</div>
+            <div class="boxFlex">3</div>
+            <div class="boxFlex">4</div>
+            <div class="boxFlex">5</div>
+        </div>
+
+        <h1>Align-items</h1>
+        <div class="alignFlexStart">
+            <p>Flex-start</p>
+            <div class="boxFlex">1</div>
+            <div class="boxFlex2">2</div>
+            <div class="boxFlex">3</div>
+            <div class="boxFlex2">4</div>
+        </div>
+
+        <div class="alignFlexEnd">
+            <p>Flex-End</p>
+            <div class="boxFlex">1</div>
+            <div class="boxFlex2">2</div>
+            <div class="boxFlex">3</div>
+            <div class="boxFlex2">4</div>
+        </div>
+
+        <div class="alignCenter">
+            <p>Center</p>
+            <div class="boxFlex">1</div>
+            <div class="boxFlex2">2</div>
+            <div class="boxFlex">3</div>
+            <div class="boxFlex2">4</div>
+        </div>
+
+        <div class="alignStretch">
+            <p>Stretch</p>
+            <div class="boxFlex">1</div>
+            <div class="boxFlex2">2</div>
+            <div class="boxFlex">3</div>
+            <div class="boxFlex2">4</div>
+        </div>
+
+        <div class="alignBaseline">
+            <p>Baseline</p>
+            <div class="boxFlex">1</div>
+            <div class="boxFlex2">2</div>
+            <div class="boxFlex">3</div>
+            <div class="boxFlex2">4</div>
+        </div>
+
+        <h1>Align-content</h1>
+        <div class="contentFlexStart">
+            <p>Flex-start</p>
+            <div class="boxFlex">1</div>
+            <div class="boxFlex3">2</div>
+            <div class="boxFlex">3</div>
+            <div class="boxFlex3">4</div>
+            <div class="boxFlex">5</div>
+            <div class="boxFlex3">6</div>
+            <div class="boxFlex">7</div>
+            <div class="boxFlex3">8</div>
+        </div>
+
+        <ul class="contentFlexEnd">
+            <li><p> Flex-end</p></li>
+            <li class="boxFlex">1</li>
+            <li class="boxFlex3">2</li>
+            <li class="boxFlex">3</li>
+        </ul>
+
+        <ul class="contentFlexCenter">
+            <li><p> center</p></li>
+            <li class="boxFlex">1</li>
+            <li class="boxFlex3">2</li>
+            <li class="boxFlex">3</li>
+        </ul>
+
+        <ul class="contentFlexStretch">
+            <li><p> Stretch</p></li>
+            <li class="boxFlex">1</li>
+            <li class="boxFlex3">2</li>
+            <li class="boxFlex">3</li>
+        </ul>
+
+
+        <div class="container">
+            <p> Space-between</p>
+            <ul class="contentFlexSpaceBetween">
+                <li class="boxFlex">1</li>
+                <li class="boxFlex">2</li>
+                <li class="boxFlex">3</li>
+                <li class="boxFlex">4</li>
+                <li class="boxFlex">5</li>
+                <li class="boxFlex">6</li>
+                <li class="boxFlex">7</li>
+                <li class="boxFlex">8</li>
+                <li class="boxFlex">9</li>
+                <li class="boxFlex">10</li>
+                <li class="boxFlex">11</li>
+                <li class="boxFlex">12</li>
+                <li class="boxFlex">13</li>
+                <li class="boxFlex">14</li>
+                <li class="boxFlex">15</li>
+                <li class="boxFlex">16</li>
+                <li class="boxFlex">17</li>
+                <li class="boxFlex">18</li>
+                <li class="boxFlex">19</li>
+                <li class="boxFlex">20</li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <p> Space-around</p>
+            <ul class="contentFlexSpaceAround">
+                <li class="boxFlex">1</li>
+                <li class="boxFlex">2</li>
+                <li class="boxFlex">3</li>
+                <li class="boxFlex">4</li>
+                <li class="boxFlex">5</li>
+                <li class="boxFlex">6</li>
+                <li class="boxFlex">7</li>
+            </ul>
+        </div>
+
+        <h1>Align-self</h1>
+        <div class="container">
+            <p> Flex-start - Flex-end</p>
+            <ul class="alignSelfFlexStartEnd">
+                <li class="boxFlex4">1</li>
+                <li class="boxFlex4">2</li>
+                <li class="boxFlex4">3</li>
+                <li class="boxFlex4 flex-end">4</li>
+                <li class="boxFlex4">5</li>
+                <li class="boxFlex4">6</li>
+                <li class="boxFlex4">7</li>
+            </ul>
+        </div>
+
+
+
+
+    </main>
+</body>
+
+</html>
