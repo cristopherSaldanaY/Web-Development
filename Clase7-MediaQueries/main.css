@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box; 
+    padding: 0; 
+    margin: 0;
+    font-family: 'Raleway', sans-serif; /* buscamos en google fonts, primero link en html y despues establecer de manera global */
+}
+
+body{
+    background: #eef1fc;
+}
+
+/* Responsive design */
+.responsive{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(187, 183, 183);
+    display: flex;
+    justify-content: center; /* centra horizontal */
+    align-items: center; /* centra vertical */
+}
+
+.boxResponsive{
+    width: 200px;
+    height: 200px;
+    background-color: rebeccapurple;
+    border: 2px solid #fff
+   
+}
+
+
+/* Width / Height modificar el ancho y alto en el tamaño de hasta 600px */
+@media (max-width: 600px){
+    .boxResponsive2{
+        background-color: rgb(77, 77, 245);
+        border: 3px solid #fff;
+        width: 100px;
+        height: 100px;
+        border-radius: 10px 100px / 120px;
+    }
+}
+
+
+/* aspect ratio tipo de condicion */
+@media (max-aspect-ratio: 4/3){
+
+    .boxResponsive2{
+        border-radius: 50%;
+        background-color: aqua;
+        border-radius: 50% 20% / 10% 40%;
+    }
+}
+
+
+
+/* orientation portrait: vertical: cuando el alto es mayor al ancho  */
+@media (orientation: portrait ){
+    .boxResponsive2{
+        border: 4px solid black;
+        background-color: rgb(111, 44, 71);
+    }
+}
+
+/* orientation landscape: horizontal: cuando el ancho es mayor al alto  */
+@media (orientation: landscape ){
+    .boxResponsive2{
+        width: 300px;
+        height: 300px;
+        border: 2px solid black;
+        border-radius: 50%;
+        background-color: rgb(57, 151, 87);
+    }
+}
+
+
+/* resolution: Densidad de pixeles del dispositivo
+   se usan las unidades:
+   - dpi: puntos por pulgada
+   - dpcm: puntos por centimetro
+   - dppx: puntos por unidad px,  1px = 96dpi
+*/
+@media (min-resolution: 10dpi){
+    .boxResponsive2{
+        border: 2px solid yellow;
+        background-color: rgb(35, 16, 130);
+    }
+}
+
+@media (min-resolution: 500dpi){
+    .boxResponsive2{
+        border: 2px solid pink;
+        background-color: rgb(35, 16, 130);
+    }
+}
+
+/* scan: tipos de pantalla */
+
+/* color: densidad de color del dispositivo */
+
+/* monochrome: densidad de grises */
+
+
+/* condición and: se aplicara si ambas son verdaderas */
+@media (min-width: 700px) and (max-width: 800px){
+    .boxResponsive2{
+        display: none; /* no aparecera */
+    }
+}
+
+/* Operador or: se representa con una coma, se aplica si una o ambas son verdaderas */
+@media(max-width: 100px), (max-width: 900px){
+    .boxResponsive2{
+        background-color: rgb(141, 92, 20);
+        border: 2px solid #fff;
+        box-shadow: 0 0 1rem rebeccapurple;
+    }
+}
+
+/* Operador NOT */
+
+/* Operador Only  */
+@media only screen and (max-width: 768px){
+    .boxResponsive2{
+        border: 4px solid black;
+        background-color: rgb(111, 44, 71);
+    }
+}
+
+
+
+/* cambiar el display en tamaño pequeño movil */
+@media (max-width: 600px){
+    .responsive{
+        flex-direction: column;
+    }
+}

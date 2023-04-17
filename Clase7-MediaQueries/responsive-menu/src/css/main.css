@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* flex solo afecta a los hijos, no nietos */
+.menuNav{
+    width: 100%;
+    height: 80px;
+    min-width: 370px;
+    background-color: #121127;
+    display: flex;
+    justify-content: center; /* centra la caja al centro de forma horizontal */ 
+    align-items: center; /* centra el contenido al centro en forma vertical */
+
+}
+
+.menuNav-item{
+    width: 100%;
+    display: flex;
+    justify-content: center; /* centra en horizontal */
+    align-items: center; /* centra en vertical */
+    gap: 40px;
+}
+
+.item{
+    height: 100%;
+    list-style: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.item:hover{
+    border-bottom: 2px solid #fff;
+}
+
+.image{
+    width: 50px;
+    height: 50px;
+    
+}
+.imageLogo:hover{
+    cursor: pointer;
+    border-radius: 2px;
+    /* box-shadow: rgba(32, 108, 195, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset; */
+}
+
+.menuIcon{
+    display: none;
+}
+
+@media (max-width: 600px){
+    .menuIcon{
+        display: block;
+    }
+}
+
+@media (max-width: 600px){
+    .image{
+        display: none;
+    }
+}
+
+@media (max-width: 600px){
+    .imageLogo{
+        width: 150px;
+    }
+
+    .menuIcon{
+        width: 20px;
+    }
+
+    .menuNav-item{
+     justify-content: space-around;   
+    }
+}
