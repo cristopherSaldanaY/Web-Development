@@ -1,0 +1,277 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* INICIO NAVBAR */
+.menuNav{
+    width: 100%;
+    height: 80px;
+    min-width: 370px;
+    background-color: #121127;
+    display: flex;
+    position:fixed;
+    justify-content: center; /* centra la caja al centro de forma horizontal */ 
+    align-items: center; /* centra el contenido al centro en forma vertical */
+
+}
+
+.menuNav-item{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center; /* centra en horizontal */
+    align-items: center; /* centra en vertical */
+    gap: 40px;
+}
+
+.item{
+    height: 100%;
+    list-style: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.item:hover{
+    border-bottom: 2px solid #fff;
+}
+
+.image{
+    width: 50px;
+    height: 50px;
+    
+}
+.imageLogo:hover{
+    cursor: pointer;
+    border-radius: 2px;
+    /* box-shadow: rgba(32, 108, 195, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset; */
+}
+
+.menuIcon{
+    display: none;
+}
+
+@media (max-width: 600px){
+    .menuIcon{
+        display: block;
+    }
+}
+
+@media (max-width: 600px){
+    .image{
+        display: none;
+    }
+}
+
+@media (max-width: 600px){
+    .imageLogo{
+        width: 150px;
+    }
+
+    .menuIcon{
+        width: 20px;
+    }
+
+    .menuNav-item{
+     justify-content: space-around;   
+    }
+}
+
+/* FIN NAVBAR */
+
+
+/* FOOTER */
+
+.container-footer{
+
+    width: 100%;
+    height: 235px;
+    padding: 40px 0px;
+    margin-top: 40px;
+    background-color: #121127;
+    bottom: 0;
+    
+}
+
+.container-footer footer{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-footer footer h4{
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.logo-footer{
+    text-align: center;
+}
+
+.network-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.icon-footer{
+    width: 30px;
+    margin: 20px;
+}
+
+#whatsapp:hover{
+    background: #0ec143;
+    border-radius: 2px;
+
+}
+
+#linkedin:hover{
+    background: #0a66c2;
+    border-radius: 2px;
+}
+
+#github:hover{
+    background: #3a277c;
+    border-radius: 2px;
+}
+
+/* fin footer */
+
+
+/* CONTENT */
+
+/* .container-content{
+    width: 100%;
+    display: flex;
+    padding-top: 120px;
+    padding-bottom: 235px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+} */
+
+
+.listItem{
+    margin-top: 20px;
+}
+
+.console{
+    margin-top: 20px;
+}
+
+.className{
+    margin-top: 20px;
+}
+
+.querySelector{
+    text-align: center;
+    margin-top: 5px;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px){
+    .container-content{
+        flex-direction: column;
+    }
+
+    .games{
+        text-align: center;
+        
+    }
+
+    .otherGames{
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+}
+
+
+
+.btn-search{
+    margin-top: 20px;
+    width: 100px;
+    height: 27px;
+    border-radius: 8px;
+    background: #0ec143;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.styled-table { 
+    border-collapse: collapse; 
+    margin: 25px 0; font-size: 1em; 
+    font-family: sans-serif; 
+    min-width: 450px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); 
+}
+
+.styled-table thead tr{
+    text-align:justify;
+}
+
+.styled-table thead tr { 
+    background-color: #980081; 
+    color: #ffffff; 
+    text-align: middle; 
+}
+
+.styled-table th, .styled-table td { 
+    padding: 12px 15px; 
+}
+
+.styled-table tbody tr { 
+    border-bottom: 1px solid #dddddd;
+} 
+
+.styled-table tbody tr:nth-of-type(even) { 
+    background-color: #f3f3f3; 
+} 
+
+.container-two{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 
+------border------
+solid.
+dotted.
+double.
+dashed.
+groove.
+ridge.
+inset.
+outset. */
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 120px;
+    gap: 100px;
+}
+
+.container-item{
+    width: 90%;
+    height: 100vh;
+    border: 2px dashed rgb(160, 157, 157);
+    display: flex;
+    flex-wrap: wrap; /* evitar que se agrupen y hace el salto de linea */
+    justify-content: center;
+    align-items: center;
+}
+
+.container-games{
+    width: 50%; /* usara el 50% del total */
+    padding-top: 17px;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+}

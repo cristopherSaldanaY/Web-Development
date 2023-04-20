@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box; 
+    padding: 0; 
+    margin: 0;
+    font-family: 'Raleway', sans-serif; /* buscamos en google fonts, primero link en html y despues establecer de manera global */
+}
+
+body{
+    background-color: #121127;
+}
+
+h1{
+    color: #f9f9fb;
+}
+h2{
+    color: #f9f9fb;
+}
+
+p{
+    color: #85848f;
+}
+
+.nav-content{
+    width: 100%;
+    height: 102px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: fixed; */
+    background: #121127;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.379);
+}
+
+.nav-item-left{
+    margin-left: 20px;
+    display: flex;
+}
+
+.nav-item-right{
+    color: #85848f;
+    display: flex;
+    gap: 100px;
+    margin-right: 20px;
+}
+
+.image-title{
+    width: 100%;
+    height: 100vh;
+    background-image: url("./assets/fondo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-title h1 {
+    font-size: 84px;
+}
+
+
+.card-flex{
+    width: 700px;
+    height: 211px;
+    border-radius: 12px;
+    position: absolute;
+    bottom: -210px;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    align-items: center;
+    background: #201f37;
+    gap: 30px;
+}
+
+.card-title{
+    color: #444BD3;
+    font-size: 14px;
+}
+
+.card-name{
+    font-size: 32px;
+    
+}
+
+.card-job{
+    font-size: 20px;
+}
+.content-kubend{
+   width: 100%;
+   height: 100vh;
+}
+
+.card-kubend{
+    display: flex;
+    justify-content: center;
+}
+
+.content-kubend{
+    width: 100%;
+    padding-top: 15%;
+    
+}
+
+.perfil{
+    width: 140px;
+    border-radius: 50%;
+}
