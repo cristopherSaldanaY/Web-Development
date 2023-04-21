@@ -6,6 +6,12 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body{
+    position: relative; /*  */
+    padding-bottom: 80px; /* un poco mas grande que el footer  ->> para dejar footer al final*/
+    min-height: 100vh; /* le decimos que como minimo mida lo del viewPort  ->> para dejar footer al final*/ 
+}
+
 /* INICIO NAVBAR */
 .menuNav{
     width: 100%;
@@ -91,7 +97,10 @@
     height: 235px;
     padding: 40px 0px;
     margin-top: 40px;
+    position:absolute;
+    bottom: 0px;
     background-color: #121127;
+
     bottom: 0;
     
 }
@@ -252,26 +261,77 @@ outset. */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 120px;
+    padding-top: 150px;
+    padding-bottom: 235px;;
     gap: 100px;
 }
 
 .container-item{
     width: 90%;
-    height: 100vh;
+    height: 100%;
     border: 2px dashed rgb(160, 157, 157);
     display: flex;
     flex-wrap: wrap; /* evitar que se agrupen y hace el salto de linea */
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .container-games{
     width: 50%; /* usara el 50% del total */
-    padding-top: 17px;
+    padding: 17px;
     text-align: center;
 }
 
 ul{
     list-style: none;
+}
+
+.table-game{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+
+
+  .container-addGames{
+    width: 50%; /* usara el 50% del total */
+    padding: 17px;
+    text-align: center;
+  }
+
+  .inputBtn{
+    width: 100%;
+    height: 100%;
+    margin-top: 34px;
+  }
+
+  input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#titleGames{
+    padding-bottom: 34px;
 }

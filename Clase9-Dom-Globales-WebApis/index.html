@@ -15,7 +15,7 @@
     <title>Clase 9</title>
 </head>
 
-<body>
+
     <nav class="menuNav">
         <ul class="menuNav-item">
             <li class="item">
@@ -48,125 +48,45 @@
         </ul>
     </nav>
 
-    <section class="container">
+    <article class="container">
         <div class="container-item">
-            <section class="container-games">
-                <h1 id="title">Listado de Juegos </h1>
-                <ul class="listItem">
-                    <li>Call of Duty Warzone</li>
-                    <li>Elden Ring</li>
-                    <li>The Last of Us parte 1</li>
-                    <li>The Last of Us parte 2</li>
-                </ul>
-                <section class="className">
-                    Consola: PlayStation 5
-                </section>
-                <button class="btn-search">Buscar</button>
-    
-            </section>
-            <section class="container-games">
-                <h1 class="title">Juegos faltantes</h1>
-                <ul class="listItem">
-                    <li id="resident">Resident Evil 5</li>
-                    <li id="resident">Resident Evil 6</li>
-                    <li id="resident">Resident Evil 7</li>
-                    <li id="resident">Resident Evil 8</li>
-                </ul>
-                <section class="className">
-                    Consola: PlayStation 5
-                </section>
-                <button class="btn-search" id="btnSearch">Buscar</button>
-            </section>
-            <section class="container-games">
-                <h1 id="title">Listado de Juegos </h1>
-                <ul class="listItem">
-                    <li>Call of Duty Warzone</li>
-                    <li>Elden Ring</li>
-                    <li>The Last of Us parte 1</li>
-                    <li>The Last of Us parte 2</li>
-                </ul>
-                <section class="className">
-                    Consola: PlayStation 5
-                </section>
-                <button class="btn-search">Buscar</button>
-    
-            </section>
-            <section class="container-games">
-                <h1 class="title">Juegos faltantes</h1>
-                <ul class="listItem">
-                    <li id="resident">Resident Evil 5</li>
-                    <li id="resident">Resident Evil 6</li>
-                    <li id="resident">Resident Evil 7</li>
-                    <li id="resident">Resident Evil 8</li>
-                </ul>
-                <section class="className">
-                    Consola: PlayStation 5
-                </section>
-                <button class="btn-search" id="btnSearch">Buscar</button>
-            </section>
-            <section class="container-games">
-                <h1 id="title">Listado de Juegos </h1>
-                <ul class="listItem">
-                    <li>Call of Duty Warzone</li>
-                    <li>Elden Ring</li>
-                    <li>The Last of Us parte 1</li>
-                    <li>The Last of Us parte 2</li>
-                </ul>
-                <section class="className">
-                    Consola: PlayStation 5
-                </section>
-                <button class="btn-search">Buscar</button>
-    
-            </section>
-            <section class="container-games">
-                <h1 class="title">Juegos faltantes</h1>
-                <ul class="listItem">
-                    <li id="resident">Resident Evil 5</li>
-                    <li id="resident">Resident Evil 6</li>
-                    <li id="resident">Resident Evil 7</li>
-                    <li id="resident">Resident Evil 8</li>
-                </ul>
-                <section class="className">
-                    Consola: PlayStation 5
-                </section>
-                <button class="btn-search" id="btnSearch">Buscar</button>
-            </section>
-            <section class="container-games">
-                <h1 id="title">Listado de Juegos </h1>
-                <ul class="listItem">
-                    <li>Call of Duty Warzone</li>
-                    <li>Elden Ring</li>
-                    <li>The Last of Us parte 1</li>
-                    <li>The Last of Us parte 2</li>
-                </ul>
-                <section class="className">
-                    Consola: PlayStation 5
-                </section>
-                <button class="btn-search">Buscar</button>
-    
-            </section>
-            <section class="container-games">
-                <h1 class="title">Juegos faltantes</h1>
-                <ul class="listItem">
-                    <li id="resident">Resident Evil 5</li>
-                    <li id="resident">Resident Evil 6</li>
-                    <li id="resident">Resident Evil 7</li>
-                    <li id="resident">Resident Evil 8</li>
-                </ul>
-                <section class="className">
-                    Consola: PlayStation 5
-                </section>
-                <button class="btn-search" id="btnSearch">Buscar</button>
-            </section>
+            <div class="container-addGames">
+                <h1 id="title">Agregar nuevo juego </h1>
+                <div class="inputBtn">
+                    <input type="text" id="item-input" placeholder="nombre del juego">
+                    <button id="add-button">Agregar</button>
+                </div>
+
+            </div>
+            <div class="container-games">
+                <h2 id="titleGames">Juegos PS5 </h2>
+                <table class="table-game">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Fecha de ingreso</th>
+                        </tr>
+                    </thead>
+                    <tbody id="item-list">
+
+                    </tbody>
+                </table>
+            </div>
         </div>
-    </section>
+        
+    </article>
+    <article class="container">
+        <div class="container-item">
+            <div class="searchGifs">
+                <h2 id="title">Agregar nuevo juego </h2>
+                <div class="seatchBtn">
+                    <input type="text" id="search-input" placeholder="nombre del juego">
+                    <button id="-button">Agregar</button>
+                </div>
+            </div>
+        </div>
 
-
-
-
-
-
-
+    </article>
     <div class="container-footer">
         <footer>
             <div class="logo-footer">
@@ -179,10 +99,12 @@
             </div>
             <hr>
             <h4>© 2023 kub-end - Todos los Derechos Reservados</h4>
+    
         </footer>
     </div>
 
-    
+
+
     <!-- JS -->
     <script src="main.js"></script>
 </body>
