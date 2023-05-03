@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* posicionar footer con Grid */
+body{
+    display: grid; /* hacemos grid */
+    min-height: 100vh; /* tome todo el contenido */
+    grid-template-rows:auto 1fr auto ; /* establecer las filas */
+}
+
+/* nav*/
+.nav-content{
+    width: 100%;
+    height: 50px;
+    min-width: 370px;
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center; /* centra la caja al centro de forma horizontal */ 
+    align-items: center; /* centra el contenido al centro en forma vertical */
+    border-bottom: 1px solid #EAEAEA;
+}
+  
+.nav-menu{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start; /* centra en horizontal */
+    align-items: center; /* centra en vertical */
+    gap: 40px;
+}
+  
+.nav-item{
+    font-weight: 800;
+    color: #404040;
+    margin-left: 45px;
+    cursor: pointer;
+}
+
+/* Fin nav */
+
+
+/* Footer */
+
+footer{
+    margin-top: 108px;
+}
+
+.footer-content{
+    width: 100%;
+    height: 108px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #F5F5F5;
+    border-top: 1px #EAEAEA solid;
+    margin-top: auto;
+    color: #777;
+    text-align: center;
+}
+
+.footer-link ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+    padding-bottom: 20px;
+
+}
+
+.icon-footer{
+    width: 2.5em;
+}
+
+a{
+    color: #404040;
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+/* Fin footer */
+
+
+/* Content */
+.content{
+    max-width: 1069px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.content-cards{
+    display: flex;
+    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+
+.card{
+    width: 300px;
+    height: 439px;
+    border: 1px solid;
+    border-radius: 12px;
+    /* box-shadow: 0 0 1rem  rgba(0, 0, 0, 50%); */
+    overflow: hidden; /* lo que sobresalga lo escondera */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #f5f5f5;
+}
+
+
+.content-img{
+    width: 100%;
+    height: 250px;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* para que toem toda la imagen */
+}
+
+.description{
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    padding: 3px;
+}
+
+.title-product{
+    color: #404040;
+}
+
+.price {
+    font-size: 13px;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.buy{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #404040 ;
+    color: #f5f5f5;
+
+}
