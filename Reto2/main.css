@@ -109,3 +109,9 @@ p{
     width: 140px;
     border-radius: 50%;
 }
+
+.full-content{
+    max-width: 990px;
+    border: 1px solid orange;
+    margin: 0 auto;
+}

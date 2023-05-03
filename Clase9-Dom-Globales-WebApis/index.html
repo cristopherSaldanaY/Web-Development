@@ -15,78 +15,123 @@
     <title>Clase 9</title>
 </head>
 
+<body>
+    <header>
+        <nav class="menuNav">
+            <ul class="menuNav-item">
+                <li class="item">
+                    <figure>
+                        <img class="image" src="./assets/html.png" alt="">
+                    </figure>
+                </li>
+                <li class="item">
+                    <figure>
+                        <img class="image" src="./assets/css-3.png" alt="">
+                    </figure>
+                </li>
+                <li class="items">
+                    <figure>
+                        <img class="imageLogo" src="./assets/logokuben.png" alt="">
+                    </figure>
+                </li>
+                <li class="item">
+                    <figure>
+                        <img class="image" src="./assets/javascript.png" alt="">
+                    </figure>
+                </li>
+                <li class="item">
+                    <figure>
+                        <img class="image" src="./assets/typescript.png" alt="">
+                    </figure>
+                </li>
 
-    <nav class="menuNav">
-        <ul class="menuNav-item">
-            <li class="item">
-                <figure>
-                    <img class="image" src="./assets/html.png" alt="">
-                </figure>
-            </li>
-            <li class="item">
-                <figure>
-                    <img class="image" src="./assets/css-3.png" alt="">
-                </figure>
-            </li>
-            <li class="items">
-                <figure>
-                    <img class="imageLogo" src="./assets/logokuben.png" alt="">
-                </figure>
-            </li>
-            <li class="item">
-                <figure>
-                    <img class="image" src="./assets/javascript.png" alt="">
-                </figure>
-            </li>
-            <li class="item">
-                <figure>
-                    <img class="image" src="./assets/typescript.png" alt="">
-                </figure>
-            </li>
+                <img class="menuIcon" src="./assets/menu.png" alt="">
+            </ul>
+        </nav>
+    </header>
 
-            <img class="menuIcon" src="./assets/menu.png" alt="">
-        </ul>
-    </nav>
+    <section>
+        <div class="full-content">
+            <article class="container">
+                <div class="container-item">
+                    <div class="container-addGames">
+                        <h1 id="title">Agregar nuevo juego </h1>
+                        <div class="inputBtn">
+                            <input type="text" id="item-input" placeholder="nombre del juego">
+                            <button id="add-button">Agregar</button>
+                        </div>
 
-    <article class="container">
-        <div class="container-item">
-            <div class="container-addGames">
-                <h1 id="title">Agregar nuevo juego </h1>
-                <div class="inputBtn">
-                    <input type="text" id="item-input" placeholder="nombre del juego">
-                    <button id="add-button">Agregar</button>
+                    </div>
+                    <div class="container-games">
+                        <h2 id="titleGames">Juegos PS5 </h2>
+                        <table class="table-game">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Fecha de ingreso</th>
+                                </tr>
+                            </thead>
+                            <tbody id="item-list">
+
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
 
-            </div>
-            <div class="container-games">
-                <h2 id="titleGames">Juegos PS5 </h2>
-                <table class="table-game">
-                    <thead>
-                        <tr>
-                            <th>Nombre</th>
-                            <th>Fecha de ingreso</th>
-                        </tr>
-                    </thead>
-                    <tbody id="item-list">
+            </article>
 
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        
-    </article>
-    <article class="container">
-        <div class="container-item">
-            <div class="searchGifs">
-                <h2 id="title">Agregar nuevo juego </h2>
-                <div class="seatchBtn">
-                    <input type="text" id="search-input" placeholder="nombre del juego">
-                    <button id="-button">Agregar</button>
+            <article class="container">
+                <div class="container-gifs">
+                    <div class="gif-header">
+                        <h2>Buscar Gifs</h2>
+                        <div class="input-search">
+                            <input type="text" id="search-input" placeholder="Escribe el nombre">
+                            <button id="search-btn">Buscar</button>
+                        </div>
+                    </div>
+                    <div class="gifs-item" id="gifs-items">
+                    </div>
                 </div>
-            </div>
-        </div>
+            </article>
 
-    </article>
+            <article class="container">
+                <div class="container-gifs">
+
+                    <div class="change-css">
+                        <button class="btn-change" id="changeItem">Cambiar elemento</button>
+                        <div class="item-change aremover" id="item-change-css"></div>
+                    </div>
+
+                </div>
+            </article>
+
+            <article class="container">
+                <div class="container-create">
+                    <button class="btn-create" id="btn-create">Crear elemento</button>
+                    <button class="btn-delete" id="btn-delete">Eliminar elemento</button>
+                    <button class="btn-replace" id="btn-replace">Remplazar elemento</button>
+                    <div class="create-element" id="container-createElement">
+                        <span id="spanDelete">eliminar |</span>
+                        <span id="spanReplace"> | remplazar</span>
+                    </div>
+                </div>
+            </article>
+            <article class="container">
+                <div class="container-create">
+                    <button id="btn-local">Crear LocalStorage</button>
+                    <button id="btn-local-get">Obtener LocalStorage</button>
+                    <button id="btn-local-delete">Eliminar LocalStorage</button>
+                    <div class="container-local-session">
+
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+
+
     <div class="container-footer">
         <footer>
             <div class="logo-footer">
@@ -99,7 +144,7 @@
             </div>
             <hr>
             <h4>© 2023 kub-end - Todos los Derechos Reservados</h4>
-    
+
         </footer>
     </div>
 
@@ -108,5 +153,8 @@
     <!-- JS -->
     <script src="main.js"></script>
 </body>
+
+
+
 
 </html>
